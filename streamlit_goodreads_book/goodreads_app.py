@@ -80,9 +80,9 @@ mode_author = books_finished['Author'].mode()[0]
 st.write(f'It looks like you have finished {u_books} books with a total of {u_authors} unique authors. Your most read author is {mode_author}!')
 st.write(f'Your app results can be found below, we have analyzed everything from your book length distribution to how you rate books. Take a look around, all the graphs are interactive!')
 
-row1_col1, row1_col2 = st.beta_columns(2)
-row2_col1, row2_col2 = st.beta_columns(2)
-row3_col1, row3_col2 = st.beta_columns(2)
+row1_col1, row1_col2 = st.columns(2)
+row2_col1, row2_col2 = st.columns(2)
+row3_col1, row3_col2 = st.columns(2)
 
 with row1_col1:
 	mode_year_finished = int(books_df['Year Finished'].mode()[0])
